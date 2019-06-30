@@ -13,18 +13,18 @@ output "network_name" {
   value = "${google_compute_network.this.name}"
 }
 
-output "subnet" {
-  description = "The link to the subnet"
+output "subnetwork" {
+  description = "The link to the subnetwork"
   value = "${google_compute_subnetwork.this.self_link}"
 }
 
-output "subnet_name" {
-  description = "The subnet name"
+output "subnetwork_name" {
+  description = "The subnetwork name"
   value = "${google_compute_subnetwork.this.name}"
 }
 
-output "subnet_region" {
-  description = "The subnet region"
+output "subnetwork_region" {
+  description = "The subnetwork region"
   value = "${google_compute_subnetwork.this.region}"
 }
 
