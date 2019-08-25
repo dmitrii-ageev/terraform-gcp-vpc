@@ -12,6 +12,7 @@ variable "ip_cidr_range" {
 
 variable "nat_ips" {
   description = "Specify the egress NAT IP address resources (Optional, Auto allocate IP if not specifed)"
-  type        = "list"
+  type        = list(string)
   default     = []
 }
+
